@@ -38,10 +38,36 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jaxb.version>2.3.0</jaxb.version>
+		<mapstruct.version>1.4.1.Final</mapstruct.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
-	
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+	            <groupId>javax.xml.bind</groupId>
+	            <artifactId>jaxb-api</artifactId>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.xml.bind</groupId>
+	            <artifactId>jaxb-core</artifactId>
+	            <version>${jaxb.version}</version>
+	        </dependency>        
+	        <dependency>
+            	<groupId>com.sun.xml.bind</groupId>
+            	<artifactId>jaxb-impl</artifactId>
+            	<version>${jaxb.version}</version>
+        	</dependency>
+	        <dependency>
+				<groupId>org.mapstruct</groupId>
+				<artifactId>mapstruct</artifactId>
+				<version>${mapstruct.version}</version>
+			</dependency>
+		</dependencies>
+		
+	</dependencyManagement>
 	
 	
 </project>
