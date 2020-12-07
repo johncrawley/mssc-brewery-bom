@@ -13,4 +13,35 @@
 	</parent>
 	
 	<packaging>pom</packaging>
+	
+	<licenses>
+		<license>
+				<name>GNU General Public License v3.0</name>
+				<url>https://www.gnu.org/licenses.gpl.txt</url>
+		</license>
+	</licenses>
+	
+	<organization>
+		<name>John Crawley Dev</name>
+	</organization>
+	
+	<developers>
+		<developer>
+			<name>John Crawley</name>
+			<organization>John Crawley Dev</organization>
+		</developer>
+	
+	</developers>
+	
+	<properties>
+		<java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<jaxb.version>2.3.0</jaxb.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+	</properties>
+	
+	
+	
 </project>
